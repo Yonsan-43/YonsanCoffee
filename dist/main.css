@@ -634,6 +634,13 @@ th {
   height: 50px;
   font-size: 16px;
   padding: 16px;
+  transition: filter 0.3s ease;
+}
+@media (any-hover: hover) {
+  .c-btn__doc-request--cta:hover {
+    transition-delay: 0.3s;
+    filter: brightness(1.25);
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -656,6 +663,13 @@ th {
   padding-top: 18px;
   font-size: 14px;
   font-weight: bold;
+  transition: filter 0.3s ease;
+}
+@media (any-hover: hover) {
+  .c-btn__contact:hover {
+    transition-delay: 0.3s;
+    filter: brightness(1.75);
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -689,6 +703,14 @@ th {
   height: 50px;
   display: inline-block;
   padding-top: 16px;
+  transition: all 0.3s ease-in-out;
+}
+@media (any-hover: hover) {
+  .c-btn__to-price:hover {
+    transition-delay: 0.3s;
+    background: #F5F5EF;
+    color: #2C3639;
+  }
 }
 
 @media screen and (max-width: 550px) {

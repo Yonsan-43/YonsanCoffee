@@ -666,6 +666,13 @@ th {
   font-size: 14px;
   padding-top: 18px;
   margin-left: 23px;
+  transition: filter 0.3s ease;
+  @media (any-hover: hover) {
+    &:hover{
+      transition-delay: .3s;
+      filter: brightness(1.25);
+    }
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -703,6 +710,13 @@ th {
   height: 50px;
   font-size: 16px;
   padding: 16px;
+  transition: filter 0.3s ease;
+  @media (any-hover: hover) {
+    &:hover{
+      transition-delay: .3s;
+      filter: brightness(1.25);
+    }
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -726,6 +740,13 @@ th {
   padding-top: 18px;
   font-size: 14px;
   font-weight: bold;
+  transition: filter 0.3s ease;
+  @media (any-hover: hover) {
+    &:hover{
+      transition-delay: .3s;
+      filter: brightness(1.75);
+    }
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -760,6 +781,14 @@ th {
   height: 50px;
   display: inline-block;
   padding-top: 16px;
+  transition: all 0.3s ease-in-out;
+  @media (any-hover: hover) {
+    &:hover{
+      transition-delay: .3s;
+      background: $cWhite;
+      color: $cAppearance;
+    }
+  }
 }
 
 @media screen and (max-width: 550px) {
