@@ -599,6 +599,13 @@ th {
   font-size: 14px;
   padding-top: 18px;
   margin-left: 23px;
+  transition: filter 0.3s ease;
+}
+@media (any-hover: hover) {
+  .c-btn__doc-request--header:hover {
+    transition-delay: 0.3s;
+    filter: brightness(1.25);
+  }
 }
 
 @media screen and (max-width: 1080px) {
