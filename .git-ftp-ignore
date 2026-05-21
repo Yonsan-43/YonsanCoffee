@@ -1,0 +1,8 @@
+.github/          # GitHub Actionsの指示書フォルダを丸ごと除外
+.gitignore        # Gitの設定ファイルを除外
+README.md         # 説明書ファイルを除外
+package.json      # Node.jsの設定ファイルを除外
+package-lock.json
+gulpfile.js
+webpack.config.js
+src/
