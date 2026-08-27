@@ -24,4 +24,12 @@ jobs:
           local-dir: ./
           # 【先】エックスサーバーの公開ディレクトリを指定（末尾は / ）
           server-dir: /xs900721.xsrv.jp/public_html/yonsan-coffee/wp-content/themes/engress/
-          git-ftp-args: --ignore-table-from=.git-ftp-ignore
+          exclude: |
+            .git*
+            .github/**
+            .gitignore
+            README.md
+            package*.json
+            gulpfile.js
+            webpack.config.js
+            src/**
