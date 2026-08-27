@@ -32,4 +32,4 @@ jobs:
             package*.json
             gulpfile.js
             webpack.config.js
-            src/**
+            src/scss/**
