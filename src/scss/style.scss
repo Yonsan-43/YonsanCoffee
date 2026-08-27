@@ -658,20 +658,24 @@ th {
   text-align: center;
   font-weight: bold;
   display: inline-block;
+  border: 2px solid $cOrange;
 }
 
 .c-btn__doc-request--header {
   border-radius: 5px;
-  width: 142px;
-  height: 50px;
+  width: 138px;
+  height: 48px;
   font-size: 14px;
-  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 23px;
-  transition: filter 0.3s ease;
+  transition: background 0.3s ease, color .3s ease;
   @media (any-hover: hover) {
     &:hover{
       transition-delay: .3s;
-      filter: brightness(1.25);
+      background: $cWhite;
+      color: $cOrange;
     }
   }
 }
@@ -711,11 +715,12 @@ th {
   height: 50px;
   font-size: 16px;
   padding: 16px;
-  transition: filter 0.3s ease;
+  transition: background 0.3s ease, color .3s ease;
   @media (any-hover: hover) {
     &:hover{
       transition-delay: .3s;
-      filter: brightness(1.25);
+      background: $cWhite;
+      color: $cOrange;
     }
   }
 }
@@ -730,22 +735,25 @@ th {
 }
 
 .c-btn__contact {
-  display: inline-block;
+  display: flex;
   background-color: $cAppearance;
-  width: 137px;
-  height: 50px;
+  width: 135px;
+  height: 48px;
   margin-left: 10px;
   border-radius: 5px;
   color: $cWhite;
   text-align: center;
-  padding-top: 18px;
+  place-items: center;
+  justify-content: center;
   font-size: 14px;
   font-weight: bold;
-  transition: filter 0.3s ease;
+  border: 2px solid $cAppearance;
+  transition: background 0.3s ease, color .3s ease;
   @media (any-hover: hover) {
     &:hover{
       transition-delay: .3s;
-      filter: brightness(1.75);
+      background: $cWhite;
+      color: $cAppearance;
     }
   }
 }
