@@ -2511,13 +2511,30 @@ th {
   border-right: 1px solid $cWhite;
   height: 100%;
   padding-top: 3px;
-  transition: all .3s ;
-  &:hover{
-    opacity: .8;
-    // background-color: #fff;
-    text-decoration: underline;
-    transform-origin: center;
+  span{
+    transition: all .3s ;display: inline-block;
+    position: relative;
+    width: fit-content;
   }
+  span::after{
+    content: "";
+    background: $cWhite;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    scale:0;
+    transform-origin: right center;
+    transition: scale .5s ease;
+  }
+  @media (any-hover: hover) {
+    span:hover::after{
+        transform-origin: left center;
+        scale:1;
+      }
+  }
+
 
   &:first-child {
     padding-left: 0;

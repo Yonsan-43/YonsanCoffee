@@ -2292,12 +2292,30 @@ th {
   border-right: 1px solid #F5F5EF;
   height: 100%;
   padding-top: 3px;
-  transition: all 0.3s;
 }
-.l-footer__gnav__item:hover {
-  opacity: 0.8;
-  text-decoration: underline;
-  transform-origin: center;
+.l-footer__gnav__item span {
+  transition: all 0.3s;
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+}
+.l-footer__gnav__item span::after {
+  content: "";
+  background: #F5F5EF;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  scale: 0;
+  transform-origin: right center;
+  transition: scale 0.5s ease;
+}
+@media (any-hover: hover) {
+  .l-footer__gnav__item span:hover::after {
+    transform-origin: left center;
+    scale: 1;
+  }
 }
 .l-footer__gnav__item:first-child {
   padding-left: 0;

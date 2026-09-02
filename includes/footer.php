@@ -8,7 +8,7 @@ $menu_items = wp_get_nav_menu_items($menu->term_id);
     <div class="l-footer__inner">
         <nav class="l-footer__gnav">
             <?php foreach ($menu_items as $item) : ?>
-                <a href="<?php echo esc_attr($item->url); ?>" class="l-footer__gnav__item"><?php echo esc_html($item->title); ?></a>
+                <a href="<?php echo esc_attr($item->url); ?>" class="l-footer__gnav__item"><span><?php echo esc_html($item->title); ?></span></a>
             <?php endforeach; ?>
         </nav><!-- /.l-footer-gnav -->
         <div class="l-footer__info">
