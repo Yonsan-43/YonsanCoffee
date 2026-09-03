@@ -1293,14 +1293,14 @@ th {
   animation-fill-mode: forwards;
 }
 .l-fv--1 {
-  background-image: url(images/fv-01.jpg);
+  background-image: url(images/fv-01.webp);
 }
 .l-fv--2 {
-  background-image: url(images/fv-02.jpg);
+  background-image: url(images/fv-02.webp);
   animation-delay: 6s;
 }
 .l-fv--3 {
-  background-image: url(images/fv-03.jpg);
+  background-image: url(images/fv-03.webp);
   animation-delay: 12s;
 }
 

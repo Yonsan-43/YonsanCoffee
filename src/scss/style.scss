@@ -1411,14 +1411,14 @@ th {
     @include animation($name: fade, $duration: 18s, $delay: 0s);
   }
   &--1 {
-    background-image: url(../images/fv-01.jpg);
+    background-image: url(../images/fv-01.webp);
   }
   &--2 {
-    background-image: url(../images/fv-02.jpg);
+    background-image: url(../images/fv-02.webp);
     animation-delay: 6s;
   }
   &--3 {
-    background-image: url(../images/fv-03.jpg);
+    background-image: url(../images/fv-03.webp);
     animation-delay: 12s;
   }
 }
@@ -1757,7 +1757,7 @@ th {
 
 @media screen and (max-width: 768px) {
   .l-features__media:nth-child(1) {
-    background-image: url(..//images/feature01.jpeg);
+    background-image: url(../images/feature01.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
