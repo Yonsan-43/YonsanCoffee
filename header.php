@@ -8,5 +8,5 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 <title><?php echo esc_html(wp_get_document_title()); ?></title>
-
+<!-- <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script> -->
 <?php wp_head(); ?>
